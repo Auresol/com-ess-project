@@ -18,10 +18,6 @@ export const wordGeneration = async function(gamemode_id){
       sentences = await Sentence.find({type:type}).where(`length`).gte(word_min_length).lte(wordMaxlength).exec();
     }else{
       sentences = await Sentence.where(`length`).gte(word_min_length).lte(wordMaxlength).exec();
-
-    }else{
-
-      throw new Error("Error occured : Type not supported");
     }
     
     const filterSentences = [...sentences].sort(() => Math.random() - 0.5).slice(0, word_num);
