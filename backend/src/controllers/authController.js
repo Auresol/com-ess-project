@@ -40,7 +40,7 @@ export const login = async (req, res) => {
   try {
     const {email, password} = req.body;
     
-    const user = await Authen.findOne({ name: name, password: password });
+    const user = await Authen.findOne({ email:email, password: password });
     
     if (!user) {
       return res.status(404).json({ message: "User not found" });
