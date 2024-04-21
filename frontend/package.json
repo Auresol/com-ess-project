@@ -1,0 +1,11 @@
+{
+  "name" : "com_ess_project",
+  "private" : true,
+  "type" : "module",
+  "scripts": {
+    "start": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

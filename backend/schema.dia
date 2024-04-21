@@ -1,0 +1,1589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute name="background">
+      <dia:color val="#ffffffff"/>
+    </dia:attribute>
+    <dia:attribute name="pagebreak">
+      <dia:color val="#000099ff"/>
+    </dia:attribute>
+    <dia:attribute name="paper">
+      <dia:composite type="paper">
+        <dia:attribute name="name">
+          <dia:string>#A4#</dia:string>
+        </dia:attribute>
+        <dia:attribute name="tmargin">
+          <dia:real val="2.8222"/>
+        </dia:attribute>
+        <dia:attribute name="bmargin">
+          <dia:real val="2.8222"/>
+        </dia:attribute>
+        <dia:attribute name="lmargin">
+          <dia:real val="2.8222"/>
+        </dia:attribute>
+        <dia:attribute name="rmargin">
+          <dia:real val="2.8222"/>
+        </dia:attribute>
+        <dia:attribute name="is_portrait">
+          <dia:boolean val="true"/>
+        </dia:attribute>
+        <dia:attribute name="scaling">
+          <dia:real val="1"/>
+        </dia:attribute>
+        <dia:attribute name="fitto">
+          <dia:boolean val="false"/>
+        </dia:attribute>
+      </dia:composite>
+    </dia:attribute>
+    <dia:attribute name="grid">
+      <dia:composite type="grid">
+        <dia:attribute name="dynamic">
+          <dia:boolean val="true"/>
+        </dia:attribute>
+        <dia:attribute name="width_x">
+          <dia:real val="1"/>
+        </dia:attribute>
+        <dia:attribute name="width_y">
+          <dia:real val="1"/>
+        </dia:attribute>
+        <dia:attribute name="visible_x">
+          <dia:int val="1"/>
+        </dia:attribute>
+        <dia:attribute name="visible_y">
+          <dia:int val="1"/>
+        </dia:attribute>
+        <dia:composite type="color"/>
+      </dia:composite>
+    </dia:attribute>
+    <dia:attribute name="color">
+      <dia:color val="#d8e5e5ff"/>
+    </dia:attribute>
+    <dia:attribute name="guides">
+      <dia:composite type="guide">
+        <dia:attribute name="position">
+          <dia:real val="0.59999999999999998"/>
+        </dia:attribute>
+        <dia:attribute name="orientation">
+          <dia:int val="0"/>
+        </dia:attribute>
+      </dia:composite>
+    </dia:attribute>
+    <dia:attribute name="guide_color">
+      <dia:color val="#00ff00ff"/>
+    </dia:attribute>
+    <dia:attribute name="display">
+      <dia:composite type="display">
+        <dia:attribute name="antialiased">
+          <dia:boolean val="true"/>
+        </dia:attribute>
+        <dia:attribute name="snap-to-grid">
+          <dia:boolean val="false"/>
+        </dia:attribute>
+        <dia:attribute name="snap-to-guides">
+          <dia:boolean val="true"/>
+        </dia:attribute>
+        <dia:attribute name="snap-to-object">
+          <dia:boolean val="true"/>
+        </dia:attribute>
+        <dia:attribute name="show-grid">
+          <dia:boolean val="true"/>
+        </dia:attribute>
+        <dia:attribute name="show-guides">
+          <dia:boolean val="true"/>
+        </dia:attribute>
+        <dia:attribute name="show-connection-points">
+          <dia:boolean val="true"/>
+        </dia:attribute>
+      </dia:composite>
+    </dia:attribute>
+  </dia:diagramdata>
+  <dia:layer name="Background" visible="true" connectable="false"/>
+  <dia:layer name="Background" visible="true" connectable="true" active="true">
+    <dia:object type="Database - Table" version="0" id="O0">
+      <dia:attribute name="obj_pos">
+        <dia:point val="6.2,11.6"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="6.2,11.6;16.3325,19.2"/>
+      </dia:attribute>
+      <dia:attribute name="meta">
+        <dia:composite type="dict"/>
+      </dia:attribute>
+      <dia:attribute name="elem_corner">
+        <dia:point val="6.2,11.6"/>
+      </dia:attribute>
+      <dia:attribute name="elem_width">
+        <dia:real val="10.1325"/>
+      </dia:attribute>
+      <dia:attribute name="elem_height">
+        <dia:real val="7.6000000000000014"/>
+      </dia:attribute>
+      <dia:attribute name="name">
+        <dia:string>#Authen#</dia:string>
+      </dia:attribute>
+      <dia:attribute name="comment">
+        <dia:string>##</dia:string>
+      </dia:attribute>
+      <dia:attribute name="visible_comment">
+        <dia:boolean val="false"/>
+      </dia:attribute>
+      <dia:attribute name="underline_primary_key">
+        <dia:boolean val="true"/>
+      </dia:attribute>
+      <dia:attribute name="tagging_comment">
+        <dia:boolean val="false"/>
+      </dia:attribute>
+      <dia:attribute name="bold_primary_keys">
+        <dia:boolean val="false"/>
+      </dia:attribute>
+      <dia:attribute name="attributes">
+        <dia:composite type="table_attribute">
+          <dia:attribute name="name">
+            <dia:string>#_id#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#ObjectId#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="primary_key">
+            <dia:boolean val="true"/>
+          </dia:attribute>
+          <dia:attribute name="nullable">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="unique">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="default_value">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+        </dia:composite>
+        <dia:composite type="table_attribute">
+          <dia:attribute name="name">
+            <dia:string>#user#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#ObjectId#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="primary_key">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="nullable">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="unique">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="default_value">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+        </dia:composite>
+        <dia:composite type="table_attribute">
+          <dia:attribute name="name">
+            <dia:string>#name#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#String#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="primary_key">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="nullable">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="unique">
+            <dia:boolean val="true"/>
+          </dia:attribute>
+          <dia:attribute name="default_value">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+        </dia:composite>
+        <dia:composite type="table_attribute">
+          <dia:attribute name="name">
+            <dia:string>#email#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#String#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="primary_key">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="nullable">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="unique">
+            <dia:boolean val="true"/>
+          </dia:attribute>
+          <dia:attribute name="default_value">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+        </dia:composite>
+        <dia:composite type="table_attribute">
+          <dia:attribute name="name">
+            <dia:string>#password#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#String#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="primary_key">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="nullable">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="unique">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="default_value">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+      <dia:attribute name="normal_font">
+        <dia:font family="serif" style="0" name="Times-Roman"/>
+      </dia:attribute>
+      <dia:attribute name="name_font">
+        <dia:font family="serif" style="80" name="Times-Bold"/>
+      </dia:attribute>
+      <dia:attribute name="comment_font">
+        <dia:font family="sans" style="88" name="Helvetica-BoldOblique"/>
+      </dia:attribute>
+      <dia:attribute name="normal_font_height">
+        <dia:real val="1.2000000000000002"/>
+      </dia:attribute>
+      <dia:attribute name="name_font_height">
+        <dia:real val="1.2"/>
+      </dia:attribute>
+      <dia:attribute name="comment_font_height">
+        <dia:real val="0.69999999999999996"/>
+      </dia:attribute>
+      <dia:attribute name="text_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.10000000000000001"/>
+      </dia:attribute>
+    </dia:object>
+    <dia:object type="Database - Table" version="0" id="O1">
+      <dia:attribute name="obj_pos">
+        <dia:point val="18.95,12.8"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="18.95,12.8;27.1025,19.2"/>
+      </dia:attribute>
+      <dia:attribute name="meta">
+        <dia:composite type="dict"/>
+      </dia:attribute>
+      <dia:attribute name="elem_corner">
+        <dia:point val="18.95,12.8"/>
+      </dia:attribute>
+      <dia:attribute name="elem_width">
+        <dia:real val="8.1524999999999999"/>
+      </dia:attribute>
+      <dia:attribute name="elem_height">
+        <dia:real val="6.4000000000000004"/>
+      </dia:attribute>
+      <dia:attribute name="name">
+        <dia:string>#User#</dia:string>
+      </dia:attribute>
+      <dia:attribute name="comment">
+        <dia:string>##</dia:string>
+      </dia:attribute>
+      <dia:attribute name="visible_comment">
+        <dia:boolean val="false"/>
+      </dia:attribute>
+      <dia:attribute name="underline_primary_key">
+        <dia:boolean val="true"/>
+      </dia:attribute>
+      <dia:attribute name="tagging_comment">
+        <dia:boolean val="false"/>
+      </dia:attribute>
+      <dia:attribute name="bold_primary_keys">
+        <dia:boolean val="false"/>
+      </dia:attribute>
+      <dia:attribute name="attributes">
+        <dia:composite type="table_attribute">
+          <dia:attribute name="name">
+            <dia:string>#_id#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#ObjectId#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="primary_key">
+            <dia:boolean val="true"/>
+          </dia:attribute>
+          <dia:attribute name="nullable">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="unique">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="default_value">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+        </dia:composite>
+        <dia:composite type="table_attribute">
+          <dia:attribute name="name">
+            <dia:string>#name#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#String#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="primary_key">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="nullable">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="unique">
+            <dia:boolean val="true"/>
+          </dia:attribute>
+          <dia:attribute name="default_value">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+        </dia:composite>
+        <dia:composite type="table_attribute">
+          <dia:attribute name="name">
+            <dia:string>#role#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#String#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="primary_key">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="nullable">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="unique">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="default_value">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+        </dia:composite>
+        <dia:composite type="table_attribute">
+          <dia:attribute name="name">
+            <dia:string>#state#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#String#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="primary_key">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="nullable">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="unique">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="default_value">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+      <dia:attribute name="normal_font">
+        <dia:font family="serif" style="0" name="Times-Roman"/>
+      </dia:attribute>
+      <dia:attribute name="name_font">
+        <dia:font family="serif" style="80" name="Times-Bold"/>
+      </dia:attribute>
+      <dia:attribute name="comment_font">
+        <dia:font family="sans" style="8" name="Helvetica-Oblique"/>
+      </dia:attribute>
+      <dia:attribute name="normal_font_height">
+        <dia:real val="1.2"/>
+      </dia:attribute>
+      <dia:attribute name="name_font_height">
+        <dia:real val="1.2"/>
+      </dia:attribute>
+      <dia:attribute name="comment_font_height">
+        <dia:real val="0.69999999999999996"/>
+      </dia:attribute>
+      <dia:attribute name="text_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.10000000000000001"/>
+      </dia:attribute>
+    </dia:object>
+    <dia:object type="Database - Table" version="0" id="O2">
+      <dia:attribute name="obj_pos">
+        <dia:point val="53.95,20.1"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="53.95,20.1;68.005,28.9"/>
+      </dia:attribute>
+      <dia:attribute name="meta">
+        <dia:composite type="dict"/>
+      </dia:attribute>
+      <dia:attribute name="elem_corner">
+        <dia:point val="53.95,20.1"/>
+      </dia:attribute>
+      <dia:attribute name="elem_width">
+        <dia:real val="14.055000000000001"/>
+      </dia:attribute>
+      <dia:attribute name="elem_height">
+        <dia:real val="8.8000000000000007"/>
+      </dia:attribute>
+      <dia:attribute name="name">
+        <dia:string>#Gamemode#</dia:string>
+      </dia:attribute>
+      <dia:attribute name="comment">
+        <dia:string>##</dia:string>
+      </dia:attribute>
+      <dia:attribute name="visible_comment">
+        <dia:boolean val="false"/>
+      </dia:attribute>
+      <dia:attribute name="underline_primary_key">
+        <dia:boolean val="true"/>
+      </dia:attribute>
+      <dia:attribute name="tagging_comment">
+        <dia:boolean val="false"/>
+      </dia:attribute>
+      <dia:attribute name="bold_primary_keys">
+        <dia:boolean val="false"/>
+      </dia:attribute>
+      <dia:attribute name="attributes">
+        <dia:composite type="table_attribute">
+          <dia:attribute name="name">
+            <dia:string>#_id#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#ObjectId#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="primary_key">
+            <dia:boolean val="true"/>
+          </dia:attribute>
+          <dia:attribute name="nullable">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="unique">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="default_value">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+        </dia:composite>
+        <dia:composite type="table_attribute">
+          <dia:attribute name="name">
+            <dia:string>#name#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#String#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="primary_key">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="nullable">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="unique">
+            <dia:boolean val="true"/>
+          </dia:attribute>
+          <dia:attribute name="default_value">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+        </dia:composite>
+        <dia:composite type="table_attribute">
+          <dia:attribute name="name">
+            <dia:string>#type#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#String#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="primary_key">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="nullable">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="unique">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="default_value">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+        </dia:composite>
+        <dia:composite type="table_attribute">
+          <dia:attribute name="name">
+            <dia:string>#word_num#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#Number#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="primary_key">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="nullable">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="unique">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="default_value">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+        </dia:composite>
+        <dia:composite type="table_attribute">
+          <dia:attribute name="name">
+            <dia:string>#word_min_length#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#Number#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="primary_key">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="nullable">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="unique">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="default_value">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+        </dia:composite>
+        <dia:composite type="table_attribute">
+          <dia:attribute name="name">
+            <dia:string>#word_max_length#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#Number#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="primary_key">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="nullable">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="unique">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="default_value">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+      <dia:attribute name="normal_font">
+        <dia:font family="serif" style="0" name="Times-Roman"/>
+      </dia:attribute>
+      <dia:attribute name="name_font">
+        <dia:font family="serif" style="80" name="Times-Bold"/>
+      </dia:attribute>
+      <dia:attribute name="comment_font">
+        <dia:font family="sans" style="8" name="Helvetica-Oblique"/>
+      </dia:attribute>
+      <dia:attribute name="normal_font_height">
+        <dia:real val="1.2"/>
+      </dia:attribute>
+      <dia:attribute name="name_font_height">
+        <dia:real val="1.2"/>
+      </dia:attribute>
+      <dia:attribute name="comment_font_height">
+        <dia:real val="0.69999999999999996"/>
+      </dia:attribute>
+      <dia:attribute name="text_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.10000000000000001"/>
+      </dia:attribute>
+    </dia:object>
+    <dia:object type="Database - Table" version="0" id="O3">
+      <dia:attribute name="obj_pos">
+        <dia:point val="33.95,17.5"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="33.95,17.5;45.52,27.5"/>
+      </dia:attribute>
+      <dia:attribute name="meta">
+        <dia:composite type="dict"/>
+      </dia:attribute>
+      <dia:attribute name="elem_corner">
+        <dia:point val="33.95,17.5"/>
+      </dia:attribute>
+      <dia:attribute name="elem_width">
+        <dia:real val="11.57"/>
+      </dia:attribute>
+      <dia:attribute name="elem_height">
+        <dia:real val="10"/>
+      </dia:attribute>
+      <dia:attribute name="name">
+        <dia:string>#Room#</dia:string>
+      </dia:attribute>
+      <dia:attribute name="comment">
+        <dia:string>##</dia:string>
+      </dia:attribute>
+      <dia:attribute name="visible_comment">
+        <dia:boolean val="false"/>
+      </dia:attribute>
+      <dia:attribute name="underline_primary_key">
+        <dia:boolean val="true"/>
+      </dia:attribute>
+      <dia:attribute name="tagging_comment">
+        <dia:boolean val="false"/>
+      </dia:attribute>
+      <dia:attribute name="bold_primary_keys">
+        <dia:boolean val="false"/>
+      </dia:attribute>
+      <dia:attribute name="attributes">
+        <dia:composite type="table_attribute">
+          <dia:attribute name="name">
+            <dia:string>#_id#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#String#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="primary_key">
+            <dia:boolean val="true"/>
+          </dia:attribute>
+          <dia:attribute name="nullable">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="unique">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="default_value">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+        </dia:composite>
+        <dia:composite type="table_attribute">
+          <dia:attribute name="name">
+            <dia:string>#gamemode#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#ObjectId#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="primary_key">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="nullable">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="unique">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="default_value">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+        </dia:composite>
+        <dia:composite type="table_attribute">
+          <dia:attribute name="name">
+            <dia:string>#users#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#[ObjectId]#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="primary_key">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="nullable">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="unique">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="default_value">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+        </dia:composite>
+        <dia:composite type="table_attribute">
+          <dia:attribute name="name">
+            <dia:string>#sentences#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#[ObjectId]#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="primary_key">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="nullable">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="unique">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="default_value">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+        </dia:composite>
+        <dia:composite type="table_attribute">
+          <dia:attribute name="name">
+            <dia:string>#name#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#String#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="primary_key">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="nullable">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="unique">
+            <dia:boolean val="true"/>
+          </dia:attribute>
+          <dia:attribute name="default_value">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+        </dia:composite>
+        <dia:composite type="table_attribute">
+          <dia:attribute name="name">
+            <dia:string>#max_size#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#Number#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="primary_key">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="nullable">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="unique">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="default_value">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+        </dia:composite>
+        <dia:composite type="table_attribute">
+          <dia:attribute name="name">
+            <dia:string>#state#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#String#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="primary_key">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="nullable">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="unique">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="default_value">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+      <dia:attribute name="normal_font">
+        <dia:font family="serif" style="0" name="Times-Roman"/>
+      </dia:attribute>
+      <dia:attribute name="name_font">
+        <dia:font family="serif" style="80" name="Times-Bold"/>
+      </dia:attribute>
+      <dia:attribute name="comment_font">
+        <dia:font family="sans" style="8" name="Helvetica-Oblique"/>
+      </dia:attribute>
+      <dia:attribute name="normal_font_height">
+        <dia:real val="1.2"/>
+      </dia:attribute>
+      <dia:attribute name="name_font_height">
+        <dia:real val="1.2"/>
+      </dia:attribute>
+      <dia:attribute name="comment_font_height">
+        <dia:real val="0.69999999999999996"/>
+      </dia:attribute>
+      <dia:attribute name="text_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.10000000000000001"/>
+      </dia:attribute>
+    </dia:object>
+    <dia:object type="Database - Table" version="0" id="O4">
+      <dia:attribute name="obj_pos">
+        <dia:point val="53.875,12.7"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="53.875,12.7;62.04,19.1"/>
+      </dia:attribute>
+      <dia:attribute name="meta">
+        <dia:composite type="dict"/>
+      </dia:attribute>
+      <dia:attribute name="elem_corner">
+        <dia:point val="53.875,12.7"/>
+      </dia:attribute>
+      <dia:attribute name="elem_width">
+        <dia:real val="8.1650000000000009"/>
+      </dia:attribute>
+      <dia:attribute name="elem_height">
+        <dia:real val="6.4000000000000004"/>
+      </dia:attribute>
+      <dia:attribute name="name">
+        <dia:string>#RoomState#</dia:string>
+      </dia:attribute>
+      <dia:attribute name="comment">
+        <dia:string>##</dia:string>
+      </dia:attribute>
+      <dia:attribute name="visible_comment">
+        <dia:boolean val="false"/>
+      </dia:attribute>
+      <dia:attribute name="underline_primary_key">
+        <dia:boolean val="true"/>
+      </dia:attribute>
+      <dia:attribute name="tagging_comment">
+        <dia:boolean val="false"/>
+      </dia:attribute>
+      <dia:attribute name="bold_primary_keys">
+        <dia:boolean val="false"/>
+      </dia:attribute>
+      <dia:attribute name="attributes">
+        <dia:composite type="table_attribute">
+          <dia:attribute name="name">
+            <dia:string>#_id#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#ObjectId#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>#test#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="primary_key">
+            <dia:boolean val="true"/>
+          </dia:attribute>
+          <dia:attribute name="nullable">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="unique">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="default_value">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+        </dia:composite>
+        <dia:composite type="table_attribute">
+          <dia:attribute name="name">
+            <dia:string>#room#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#ObjectId#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>#ref room#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="primary_key">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="nullable">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="unique">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="default_value">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+        </dia:composite>
+        <dia:composite type="table_attribute">
+          <dia:attribute name="name">
+            <dia:string>#event#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#[Object]#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="primary_key">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="nullable">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="unique">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="default_value">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+        </dia:composite>
+        <dia:composite type="table_attribute">
+          <dia:attribute name="name">
+            <dia:string>#score#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#[Object]#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="primary_key">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="nullable">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="unique">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="default_value">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+      <dia:attribute name="normal_font">
+        <dia:font family="serif" style="0" name="Times-Roman"/>
+      </dia:attribute>
+      <dia:attribute name="name_font">
+        <dia:font family="serif" style="80" name="Times-Bold"/>
+      </dia:attribute>
+      <dia:attribute name="comment_font">
+        <dia:font family="sans" style="8" name="Helvetica-Oblique"/>
+      </dia:attribute>
+      <dia:attribute name="normal_font_height">
+        <dia:real val="1.2"/>
+      </dia:attribute>
+      <dia:attribute name="name_font_height">
+        <dia:real val="1.2"/>
+      </dia:attribute>
+      <dia:attribute name="comment_font_height">
+        <dia:real val="0.69999999999999996"/>
+      </dia:attribute>
+      <dia:attribute name="text_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.10000000000000001"/>
+      </dia:attribute>
+    </dia:object>
+    <dia:object type="Database - Table" version="0" id="O5">
+      <dia:attribute name="obj_pos">
+        <dia:point val="16.975,21.1"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="16.975,21.1;26.945,29.9"/>
+      </dia:attribute>
+      <dia:attribute name="meta">
+        <dia:composite type="dict"/>
+      </dia:attribute>
+      <dia:attribute name="elem_corner">
+        <dia:point val="16.975,21.1"/>
+      </dia:attribute>
+      <dia:attribute name="elem_width">
+        <dia:real val="9.9700000000000006"/>
+      </dia:attribute>
+      <dia:attribute name="elem_height">
+        <dia:real val="8.8000000000000007"/>
+      </dia:attribute>
+      <dia:attribute name="name">
+        <dia:string>#Sentences#</dia:string>
+      </dia:attribute>
+      <dia:attribute name="comment">
+        <dia:string>##</dia:string>
+      </dia:attribute>
+      <dia:attribute name="visible_comment">
+        <dia:boolean val="false"/>
+      </dia:attribute>
+      <dia:attribute name="underline_primary_key">
+        <dia:boolean val="true"/>
+      </dia:attribute>
+      <dia:attribute name="tagging_comment">
+        <dia:boolean val="false"/>
+      </dia:attribute>
+      <dia:attribute name="bold_primary_keys">
+        <dia:boolean val="false"/>
+      </dia:attribute>
+      <dia:attribute name="attributes">
+        <dia:composite type="table_attribute">
+          <dia:attribute name="name">
+            <dia:string>#_id#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#ObjectId#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="primary_key">
+            <dia:boolean val="true"/>
+          </dia:attribute>
+          <dia:attribute name="nullable">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="unique">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="default_value">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+        </dia:composite>
+        <dia:composite type="table_attribute">
+          <dia:attribute name="name">
+            <dia:string>#type#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#String#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="primary_key">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="nullable">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="unique">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="default_value">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+        </dia:composite>
+        <dia:composite type="table_attribute">
+          <dia:attribute name="name">
+            <dia:string>#language#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#String#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="primary_key">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="nullable">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="unique">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="default_value">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+        </dia:composite>
+        <dia:composite type="table_attribute">
+          <dia:attribute name="name">
+            <dia:string>#length#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#Number#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="primary_key">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="nullable">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="unique">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="default_value">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+        </dia:composite>
+        <dia:composite type="table_attribute">
+          <dia:attribute name="name">
+            <dia:string>#sentence#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#String#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="primary_key">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="nullable">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="unique">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="default_value">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+        </dia:composite>
+        <dia:composite type="table_attribute">
+          <dia:attribute name="name">
+            <dia:string>#by#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#String#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="primary_key">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="nullable">
+            <dia:boolean val="true"/>
+          </dia:attribute>
+          <dia:attribute name="unique">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="default_value">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+      <dia:attribute name="normal_font">
+        <dia:font family="serif" style="0" name="Times-Roman"/>
+      </dia:attribute>
+      <dia:attribute name="name_font">
+        <dia:font family="serif" style="80" name="Times-Bold"/>
+      </dia:attribute>
+      <dia:attribute name="comment_font">
+        <dia:font family="sans" style="8" name="Helvetica-Oblique"/>
+      </dia:attribute>
+      <dia:attribute name="normal_font_height">
+        <dia:real val="1.2"/>
+      </dia:attribute>
+      <dia:attribute name="name_font_height">
+        <dia:real val="1.2"/>
+      </dia:attribute>
+      <dia:attribute name="comment_font_height">
+        <dia:real val="0.69999999999999996"/>
+      </dia:attribute>
+      <dia:attribute name="text_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.10000000000000001"/>
+      </dia:attribute>
+    </dia:object>
+    <dia:object type="Database - Reference" version="0" id="O6">
+      <dia:attribute name="obj_pos">
+        <dia:point val="45.52,19.6"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="45.475,15.265;53.9756,19.645"/>
+      </dia:attribute>
+      <dia:attribute name="meta">
+        <dia:composite type="dict"/>
+      </dia:attribute>
+      <dia:attribute name="orth_points">
+        <dia:point val="45.52,19.6"/>
+        <dia:point val="49.6975,19.6"/>
+        <dia:point val="49.6975,16"/>
+        <dia:point val="53.875,16"/>
+      </dia:attribute>
+      <dia:attribute name="orth_orient">
+        <dia:enum val="0"/>
+        <dia:enum val="1"/>
+        <dia:enum val="0"/>
+      </dia:attribute>
+      <dia:attribute name="orth_autoroute">
+        <dia:boolean val="true"/>
+      </dia:attribute>
+      <dia:attribute name="text_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.089999999999999997"/>
+      </dia:attribute>
+      <dia:attribute name="line_style">
+        <dia:enum val="4"/>
+        <dia:real val="1"/>
+      </dia:attribute>
+      <dia:attribute name="corner_radius">
+        <dia:real val="0"/>
+      </dia:attribute>
+      <dia:attribute name="end_arrow">
+        <dia:enum val="23"/>
+      </dia:attribute>
+      <dia:attribute name="end_arrow_length">
+        <dia:real val="0.5"/>
+      </dia:attribute>
+      <dia:attribute name="end_arrow_width">
+        <dia:real val="0.5"/>
+      </dia:attribute>
+      <dia:attribute name="start_point_desc">
+        <dia:string>#1#</dia:string>
+      </dia:attribute>
+      <dia:attribute name="end_point_desc">
+        <dia:string>#n#</dia:string>
+      </dia:attribute>
+      <dia:attribute name="normal_font">
+        <dia:font family="monospace" style="0" name="Courier"/>
+      </dia:attribute>
+      <dia:attribute name="normal_font_height">
+        <dia:real val="0.59999999999999998"/>
+      </dia:attribute>
+      <dia:connections>
+        <dia:connection handle="0" to="O3" connection="13"/>
+        <dia:connection handle="1" to="O4" connection="14"/>
+      </dia:connections>
+    </dia:object>
+    <dia:object type="Database - Reference" version="0" id="O7">
+      <dia:attribute name="obj_pos">
+        <dia:point val="27.1025,14.9"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="27.0525,14.16;34.0618,22.3618"/>
+      </dia:attribute>
+      <dia:attribute name="meta">
+        <dia:composite type="dict"/>
+      </dia:attribute>
+      <dia:attribute name="orth_points">
+        <dia:point val="27.1025,14.9"/>
+        <dia:point val="30.5263,14.9"/>
+        <dia:point val="30.5263,22"/>
+        <dia:point val="33.95,22"/>
+      </dia:attribute>
+      <dia:attribute name="orth_orient">
+        <dia:enum val="0"/>
+        <dia:enum val="1"/>
+        <dia:enum val="0"/>
+      </dia:attribute>
+      <dia:attribute name="orth_autoroute">
+        <dia:boolean val="true"/>
+      </dia:attribute>
+      <dia:attribute name="text_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.10000000000000001"/>
+      </dia:attribute>
+      <dia:attribute name="line_style">
+        <dia:enum val="4"/>
+        <dia:real val="1"/>
+      </dia:attribute>
+      <dia:attribute name="corner_radius">
+        <dia:real val="0"/>
+      </dia:attribute>
+      <dia:attribute name="end_arrow">
+        <dia:enum val="23"/>
+      </dia:attribute>
+      <dia:attribute name="end_arrow_length">
+        <dia:real val="0.5"/>
+      </dia:attribute>
+      <dia:attribute name="end_arrow_width">
+        <dia:real val="0.5"/>
+      </dia:attribute>
+      <dia:attribute name="start_point_desc">
+        <dia:string>#1#</dia:string>
+      </dia:attribute>
+      <dia:attribute name="end_point_desc">
+        <dia:string>#1#</dia:string>
+      </dia:attribute>
+      <dia:attribute name="normal_font">
+        <dia:font family="monospace" style="0" name="Courier"/>
+      </dia:attribute>
+      <dia:attribute name="normal_font_height">
+        <dia:real val="0.59999999999999998"/>
+      </dia:attribute>
+      <dia:connections>
+        <dia:connection handle="0" to="O1" connection="13"/>
+        <dia:connection handle="1" to="O3" connection="16"/>
+      </dia:connections>
+    </dia:object>
+    <dia:object type="Database - Reference" version="0" id="O8">
+      <dia:attribute name="obj_pos">
+        <dia:point val="26.945,23.2"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="26.9,22.495;34.0506,23.6143"/>
+      </dia:attribute>
+      <dia:attribute name="meta">
+        <dia:composite type="dict"/>
+      </dia:attribute>
+      <dia:attribute name="orth_points">
+        <dia:point val="26.945,23.2"/>
+        <dia:point val="30.4475,23.2"/>
+        <dia:point val="30.4475,23.2"/>
+        <dia:point val="33.95,23.2"/>
+      </dia:attribute>
+      <dia:attribute name="orth_orient">
+        <dia:enum val="0"/>
+        <dia:enum val="1"/>
+        <dia:enum val="0"/>
+      </dia:attribute>
+      <dia:attribute name="orth_autoroute">
+        <dia:boolean val="false"/>
+      </dia:attribute>
+      <dia:attribute name="text_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.089999999999999997"/>
+      </dia:attribute>
+      <dia:attribute name="line_style">
+        <dia:enum val="0"/>
+        <dia:real val="1"/>
+      </dia:attribute>
+      <dia:attribute name="corner_radius">
+        <dia:real val="0.40000000000000002"/>
+      </dia:attribute>
+      <dia:attribute name="end_arrow">
+        <dia:enum val="11"/>
+      </dia:attribute>
+      <dia:attribute name="end_arrow_length">
+        <dia:real val="0.5"/>
+      </dia:attribute>
+      <dia:attribute name="end_arrow_width">
+        <dia:real val="0.5"/>
+      </dia:attribute>
+      <dia:attribute name="start_point_desc">
+        <dia:string>#1#</dia:string>
+      </dia:attribute>
+      <dia:attribute name="end_point_desc">
+        <dia:string>#n#</dia:string>
+      </dia:attribute>
+      <dia:attribute name="normal_font">
+        <dia:font family="JetBrains Mono" style="0" name="Courier"/>
+      </dia:attribute>
+      <dia:attribute name="normal_font_height">
+        <dia:real val="0.59999999999999998"/>
+      </dia:attribute>
+      <dia:connections>
+        <dia:connection handle="0" to="O5" connection="13"/>
+        <dia:connection handle="1" to="O3" connection="18"/>
+      </dia:connections>
+    </dia:object>
+    <dia:object type="Database - Reference" version="0" id="O9">
+      <dia:attribute name="obj_pos">
+        <dia:point val="53.95,20.8"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="45.4194,20.065;53.995,21.2143"/>
+      </dia:attribute>
+      <dia:attribute name="meta">
+        <dia:composite type="dict"/>
+      </dia:attribute>
+      <dia:attribute name="orth_points">
+        <dia:point val="53.95,20.8"/>
+        <dia:point val="49.71,20.8"/>
+        <dia:point val="49.71,20.8"/>
+        <dia:point val="45.52,20.8"/>
+      </dia:attribute>
+      <dia:attribute name="orth_orient">
+        <dia:enum val="0"/>
+        <dia:enum val="1"/>
+        <dia:enum val="0"/>
+      </dia:attribute>
+      <dia:attribute name="orth_autoroute">
+        <dia:boolean val="false"/>
+      </dia:attribute>
+      <dia:attribute name="text_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.089999999999999997"/>
+      </dia:attribute>
+      <dia:attribute name="line_style">
+        <dia:enum val="0"/>
+        <dia:real val="1"/>
+      </dia:attribute>
+      <dia:attribute name="corner_radius">
+        <dia:real val="0"/>
+      </dia:attribute>
+      <dia:attribute name="end_arrow">
+        <dia:enum val="11"/>
+      </dia:attribute>
+      <dia:attribute name="end_arrow_length">
+        <dia:real val="0.5"/>
+      </dia:attribute>
+      <dia:attribute name="end_arrow_width">
+        <dia:real val="0.5"/>
+      </dia:attribute>
+      <dia:attribute name="start_point_desc">
+        <dia:string>#1#</dia:string>
+      </dia:attribute>
+      <dia:attribute name="end_point_desc">
+        <dia:string>#n#</dia:string>
+      </dia:attribute>
+      <dia:attribute name="normal_font">
+        <dia:font family="monospace" style="0" name="Courier"/>
+      </dia:attribute>
+      <dia:attribute name="normal_font_height">
+        <dia:real val="0.59999999999999998"/>
+      </dia:attribute>
+      <dia:connections>
+        <dia:connection handle="0" to="O2" connection="5"/>
+        <dia:connection handle="1" to="O3" connection="15"/>
+      </dia:connections>
+    </dia:object>
+    <dia:object type="Database - Reference" version="0" id="O10">
+      <dia:attribute name="obj_pos">
+        <dia:point val="18.95,14.9"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="16.2319,14.155;18.995,15.2506"/>
+      </dia:attribute>
+      <dia:attribute name="meta">
+        <dia:composite type="dict"/>
+      </dia:attribute>
+      <dia:attribute name="orth_points">
+        <dia:point val="18.95,14.9"/>
+        <dia:point val="17.6412,14.9"/>
+        <dia:point val="17.6412,14.9"/>
+        <dia:point val="16.3325,14.9"/>
+      </dia:attribute>
+      <dia:attribute name="orth_orient">
+        <dia:enum val="0"/>
+        <dia:enum val="1"/>
+        <dia:enum val="0"/>
+      </dia:attribute>
+      <dia:attribute name="orth_autoroute">
+        <dia:boolean val="false"/>
+      </dia:attribute>
+      <dia:attribute name="text_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.089999999999999997"/>
+      </dia:attribute>
+      <dia:attribute name="line_style">
+        <dia:enum val="4"/>
+        <dia:real val="1"/>
+      </dia:attribute>
+      <dia:attribute name="corner_radius">
+        <dia:real val="0"/>
+      </dia:attribute>
+      <dia:attribute name="end_arrow">
+        <dia:enum val="23"/>
+      </dia:attribute>
+      <dia:attribute name="end_arrow_length">
+        <dia:real val="0.5"/>
+      </dia:attribute>
+      <dia:attribute name="end_arrow_width">
+        <dia:real val="0.5"/>
+      </dia:attribute>
+      <dia:attribute name="start_point_desc">
+        <dia:string>#1#</dia:string>
+      </dia:attribute>
+      <dia:attribute name="end_point_desc">
+        <dia:string>#1#</dia:string>
+      </dia:attribute>
+      <dia:attribute name="normal_font">
+        <dia:font family="monospace" style="0" name="Courier"/>
+      </dia:attribute>
+      <dia:attribute name="normal_font_height">
+        <dia:real val="0.59999999999999998"/>
+      </dia:attribute>
+      <dia:connections>
+        <dia:connection handle="0" to="O1" connection="12"/>
+        <dia:connection handle="1" to="O0" connection="15"/>
+      </dia:connections>
+    </dia:object>
+  </dia:layer>
+</dia:diagram>
