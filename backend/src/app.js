@@ -3,6 +3,7 @@ import cors from "cors";
 
 import auth from "./routes/authRoute.js";
 import game from "./routes/gameRoute.js";
+import user from "./routes/userRoute.js";
 import jwtVerifier from "./middlewares/jwtVerifier.js";
 
 const app = express();
@@ -13,8 +14,9 @@ app.use(cors());
 
 app.use("/auth", auth);
 app.use("/game", jwtVerifier, game);
+app.use("/user", jwtVerifier, user);
 
-app.use("/" , jwtVerifier , (req, res) =>{
+app.use("/" , (req, res) =>{
   res.send("Test");
 });
 export default app;

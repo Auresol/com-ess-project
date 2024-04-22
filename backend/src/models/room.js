@@ -5,6 +5,11 @@ import Sentence from './sentence.js';
 
 const roomSchema = new mongoose.Schema({
 
+  join_code: {
+    type: String,
+    unique: true,
+    required: true
+  },
   name: {
     type: String,
     unique: true,

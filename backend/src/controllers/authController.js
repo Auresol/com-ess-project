@@ -4,10 +4,13 @@ import jwt from "jsonwebtoken";
 import "dotenv/config";
 
 export const signup = async (req, res) => {
+
+  let newUser, newAuthen;
+
   try {
     const { name, email, password, role} = req.body;
 
-    const newUser = new User({
+    newUser = new User({
       name : name,
       role : role,
       state : "ONLINE",
@@ -15,7 +18,7 @@ export const signup = async (req, res) => {
 
     await newUser.save();
 
-    const newAuthen = new Authen({
+    newAuthen = new Authen({
       email : email,
       password : password,
       user : newUser._id,
@@ -29,6 +32,14 @@ export const signup = async (req, res) => {
     res.status(200).json({ newUser, token });
 
   } catch (error) {
+    
+    if(newUser){
+      await User.findByIdAndRemove(newUser._id);
+    }
+    if(newAuthen){
+      await Authen.findByIdAndRemove(newAuthen._id);
+    }
+
     res.status(500).json({ 
       message: "Something went wrong : " + error, 
     });  
@@ -55,5 +66,3 @@ export const login = async (req, res) => {
     res.status(500).json({ message: "Something went wrong : " + error });
   }
 }
-
-

@@ -9,11 +9,20 @@ export const createRoom = async (req, res) => {
   const { name, gamemode_id, max_size } = req.body;
   const user = req.user;
   
-  console.log(user);
+  let newRoom;
+  let join_code;
+
+  while(true){
+    join_code = Math.max(10000 + Math.floor(Math.random() * 90000) - 1);
+    if(await Room.findOne({ join_code : join_code }) == null){
+      break;
+    }
+  }
   
   try{
 
-    const newRoom = new Room({ 
+    newRoom = new Room({ 
+      join_code : join_code,
       name : name, 
       gamemode : gamemode_id, 
       users : [user._id],
@@ -24,9 +33,14 @@ export const createRoom = async (req, res) => {
     await newRoom.save();
     await changeUserState(user._id, "WAITING");
     
-    res.status(201).json(newRoom);
+    res.status(200).json(newRoom);
 
   } catch (error) {
+
+    if(newRoom){
+      await Room.findOneAndDelete({_id : newRoom._id});
+      await changeUserState(user._id, "ONLINE");
+    }
     
     res.status(409).json({ message: error.message });
   }
@@ -37,7 +51,11 @@ export const getRoom = async (req, res) => {
 
   try {
     //get a room, populate the gamemode and userStates
-    const room = await Room.findById(id).populate(['gamemode', 'users']).exec();
+    const room = await Room.findOne({ join_code : id }).populate(['gamemode', 'users']).exec();
+
+    if(!room || room.length == 0){
+      return res.status(409).json({ message: "Room not found" });
+    }
 
     res.status(200).json(room);
 
@@ -66,7 +84,11 @@ export const joinRoom = async (req, res) => {
 
   try {
 
-    const room = await roomQuery(id);
+    const room = await Room.findOne({ join_code : id })  
+
+    if(!room){
+      return res.status(409).json({ message: "Room not found" });
+    }
    
     if(room.users.includes(user._id)){
         return res.status(409).json({ message: "User already in room" });
@@ -81,7 +103,7 @@ export const joinRoom = async (req, res) => {
     await room.save();
     await changeUserState(user._id, "WAITING");
 
-    res.status(200).json(room);
+    res.status(200).json(room.populate('users'));
 
   } catch (error) {
     res.status(404).json({ message: error.message });
@@ -95,7 +117,7 @@ export const deleteRoom = async (req, res) => {
 
   try {
 
-    const room = await Room.findById(id).populate('users');
+    const room = await Room.findOne({ join_code : id }).populate('users');
 
     if(room.users[0]._id != user._id){
       return res.status(409).json({ message: "User not a head" });
@@ -105,10 +127,10 @@ export const deleteRoom = async (req, res) => {
       changeUserState(user._id, "ONLINE");
     }
 
-    await Room.findByIdAndRemove(id);
+    await Room.findOneAndDelete({ join_code : id });
     
     //delete roomState, if exists
-    await RoomState.findOneAndRemove({ room : room._id });
+    await RoomState.findOneAndDelete({ room : room._id });
 
     res.status(200).json({ message: "Room deleted successfully" });
 
@@ -124,16 +146,21 @@ export const leaveRoom = async (req, res) => {
 
   try {
 
-    const room = await roomQuery(id);
+    const room = await Room.findOne({ join_code : id })
+
+    if(!room){
+      return res.status(409).json({ message: "Room not found" });
+    }
     
     if(!room.users.includes(user._id)){
       return res.status(409).json({ message: "User not in room" });
     }
 
-    room.users = room.users.filter((id) => id != user._id);
+    room.users = room.users.filter((userid) => userid != user._id);
 
     if (room.users.length == 0) {
-      await Room.findByIdAndRemove(id);
+      await Room.findOneAndDelete({ join_code : id });
+      return res.status(200).json({ message: "Empty room -> Room deleted successfully" });
     } else {
       await room.save();
     }
@@ -152,9 +179,16 @@ export const startRoom = async (req, res) => {
   const { id } = req.params;
   const user = req.user;
 
+  let room;
+  let newRoomState;
+
   try {
 
-    const room = await Room.findById(id).populate(['gamemode', 'users']);
+    room = await Room.findOne({ join_code : id }).populate(['users', 'gamemode']);
+
+    if(!room){
+      return res.status(409).json({ message: "Room not found" });
+    }
 
     if(room.state == "PLAYING"){
       return res.status(409).json({ message: "Game already started" });
@@ -172,25 +206,36 @@ export const startRoom = async (req, res) => {
     }
     
     room.sentences = sentenceList.map((sentence) => sentence._id); 
-    room.populate('sentences');
-    room.state = "PLAYING";
 
-    for(const user of room.users){
-      user.state = "PLAYING";
-    }
+    await room.populate('sentences');
+
+    room.state = "PLAYING";
+    room.users.forEach((user) => user.state = "PLAYING");
 
     await room.save();
     
-    const newRoomState = new RoomState({
+    newRoomState = new RoomState({
       room : room._id,
       state : "PLAYING",
       event : [],
-      score : room.users.map((user) => [user._id, 0])
+      score : room.users.map((user) => (user.name, 0))
     });
+
+    await newRoomState.save();
 
     res.status(200).json(room);
 
   } catch (error) {
+
+    room.state = "WAITING";
+    room.users.forEach((user) => user.state = "WAITING");
+    room.sentences = [];
+    await room.save();
+    
+    if(newRoomState){
+      await RoomState.findOneAndDelete({ _id : newRoomState._id });
+    }
+
     res.status(404).json({ message: error.message });
 
   }
@@ -203,7 +248,7 @@ export const updatePlayer = async (req, res) => {
 
   try {
 
-    const room = await roomQuery(id);
+    const room = await Room.findOne({ join_code : id }).populate('users');
 
     const roomState = await RoomState.findOne({ room : room._id });
 
@@ -246,7 +291,11 @@ export const getRoomState = async (req, res) => {
 
   try {
 
-    const room = await Room.findById(id).populate('user');
+    const room = await Room.findOne({ join_code : id }).populate('users');
+    
+    if(!room){
+      return res.status(409).json({ message: "Room not found" });
+    }
 
     let is_end = true;
     for(const user of room.users){
@@ -264,7 +313,7 @@ export const getRoomState = async (req, res) => {
     const roomState = await RoomState.findOne({ room : room._id });
 
     if(roomState == null){
-      return res.status(409).json({ message: "Room not started" });
+      return res.status(409).json({ message: "RoomState not exists" });
     }
 
     roomState.state = room.state;
@@ -277,17 +326,6 @@ export const getRoomState = async (req, res) => {
     res.status(404).json({ message: error.message });
 
   }
-}
-
-
-async function roomQuery(id){
-  const room = await Room.findById(id);
-  
-  if(!room){
-    throw new Error("Room not found");
-  }
-
-  return room;
 }
 
 async function changeUserState(user_id, state){
