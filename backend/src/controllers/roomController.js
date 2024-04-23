@@ -277,7 +277,7 @@ export const updatePlayer = async (req, res) => {
     }
 
     //update score
-    const index = roomState.score.findIndex((user) => user[0] == user.name);
+    const index = roomState.score.findIndex((index) => index[0] == user.name);
     roomState.score[index][1] = score;
     
     await roomState.save();
