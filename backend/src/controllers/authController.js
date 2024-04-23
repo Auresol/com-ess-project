@@ -54,8 +54,10 @@ export const login = async (req, res) => {
     if (!user) {
       return res.status(404).json({ message: "User not found" });
     }
+
+    const userName = await User.findById(user.user);
     
-    const token = JSON.stringify({token : process.env.JWT_SECRET_KEY, _id: user._id});
+    const token = JSON.stringify({token : process.env.JWT_SECRET_KEY, name : userName.name , _id: user._id});
 
     res.status(200).json({ token });
 
