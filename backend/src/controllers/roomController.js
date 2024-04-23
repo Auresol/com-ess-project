@@ -313,8 +313,14 @@ export const getRoomState = async (req, res) => {
       return res.status(409).json({ message: "Room not found" });
     }
 
+    const roomState = await RoomState.findOne({ room : room._id });
+
+    if(roomState == null){
+      return res.status(409).json({ message: "RoomState not exists" });
+    }
+
     let is_end = true;
-    for(const userstate of room.userState){
+    for(const userstate of roomState.userState){
       if(userstate[1] !== "ENDED"){
         is_end = false;
         break;
@@ -326,11 +332,6 @@ export const getRoomState = async (req, res) => {
       await room.save();
     }
     
-    const roomState = await RoomState.findOne({ room : room._id });
-
-    if(roomState == null){
-      return res.status(409).json({ message: "RoomState not exists" });
-    }
 
     roomState.state = room.state;
     roomState.score = roomState.score.sort((a, b) => b[1] - a[1]);
