@@ -31,3 +31,4 @@
 
 - db.{collection}.find() -> list all documents in collection
 - docker exec -i <container-name-or-id> sh -c 'mongoimport -c <c-name> -d <db-name> --drop' < xxx.csv -> import csv file to collection
+- sudo docker exec -i 5815b5e61b54 sh -c 'mongoimport -c sentences -d test --authenticationDatabase admin --username root --password root123 --type csv --headerline' < ~/backend/sentence-csv/code.csv -> example for import csv file with authenticaiton

@@ -26,8 +26,7 @@ export const signup = async (req, res) => {
 
     await newAuthen.save();
 
-    const token = jwt.sign({ name: name, _id: newUser._id},
-      process.env.JWT_SECRET_KEY, { expiresIn: "1d" });
+    const token = JSON.stringify({token : process.env.JWT_SECRET_KEY, name: name, _id: newUser._id});
 
     res.status(200).json({ newUser, token });
 
@@ -57,8 +56,7 @@ export const login = async (req, res) => {
       return res.status(404).json({ message: "User not found" });
     }
     
-    const token = jwt.sign({ email: email, _id: user.user},
-      process.env.JWT_SECRET_KEY, { expiresIn: "1d" });
+    const token = JSON.stringify({token : process.env.JWT_SECRET_KEY, name: name, _id: user._id});
 
     res.status(200).json({ token });
 

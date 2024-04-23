@@ -39,7 +39,9 @@ export const createRoom = async (req, res) => {
 
     if(newRoom){
       await Room.findOneAndDelete({_id : newRoom._id});
-      await changeUserState(user._id, "ONLINE");
+      if(await User.findById(user._id) != null){
+        await changeUserState(user._id, "ONLINE");
+      }
     }
     
     res.status(409).json({ message: error.message });
@@ -51,7 +53,7 @@ export const getRoom = async (req, res) => {
 
   try {
     //get a room, populate the gamemode and userStates
-    const room = await Room.findOne({ join_code : id }).populate(['gamemode', 'users']).exec();
+    const room = await Room.findOne({ join_code : id }).populate(['gamemode', 'users', 'sentences']).exec();
 
     if(!room || room.length == 0){
       return res.status(409).json({ message: "Room not found" });
@@ -73,6 +75,7 @@ export const getRooms = async (req, res) => {
 
   } catch (error) {
     res.status(404).json({ message: error.message });
+
 
   }
 }
@@ -317,7 +320,6 @@ export const getRoomState = async (req, res) => {
     }
 
     roomState.state = room.state;
-    roomState.score.sort((a, b) => b[1] - a[1]);
     roomState.save();
 
     res.status(200).json(roomState);
@@ -334,7 +336,7 @@ async function changeUserState(user_id, state){
     user.state = state;
     await user.save();
   }catch (error) {
-    throw new Error("User not found");
+    console.log(error);
   }
 }
 
