@@ -7,15 +7,15 @@ const jwtVerifier = (req, res, next) => {
     return res.status(401).json({ error: 'No token provided' });
   }
 
-  token = token.split(' ')[1];
+  token = token.split(' ')[1].replace(/\\/g, "");
 
-  decode = JSON.parse(token.replace(/['"]+/g, ''));
+  const decode = JSON.parse(token);
 
   if(decode.token != process.env.JWT_SECRET_KEY){
     return res.status(401).json({ error: 'Invalid token' });
   }
 
-  req.user = decoded;
+  req.user = decode;
   next();
   
 }

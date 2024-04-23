@@ -1,6 +1,5 @@
 import User from "../models/user.js";
 import Authen from "../models/authen.js";
-import jwt from "jsonwebtoken";
 import "dotenv/config";
 
 export const signup = async (req, res) => {
@@ -33,10 +32,10 @@ export const signup = async (req, res) => {
   } catch (error) {
     
     if(newUser){
-      await User.findByIdAndRemove(newUser._id);
+      await User.findByIdAndDelete(newUser._id);
     }
     if(newAuthen){
-      await Authen.findByIdAndRemove(newAuthen._id);
+      await Authen.findByIdAndDelete(newAuthen._id);
     }
 
     res.status(500).json({ 
