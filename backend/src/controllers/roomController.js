@@ -267,15 +267,7 @@ export const updatePlayer = async (req, res) => {
     }
     
     //insert in the way that it will always sorted
-    if(roomState.event.length == 0){
-      roomState.event.push([user.name, timepass,score]);
-    }else{
-      let i = 0;
-      while(roomState.event[i][1] < timepass && i < roomState.event.length){
-        i++;
-      }
-      roomState.event.push([user.name, timepass, score]);
-    }
+    roomState.event.push([user.name, timepass,score]);
 
     //update score
     const index = roomState.score.findIndex((index) => index[0] === user.name);
@@ -289,7 +281,7 @@ export const updatePlayer = async (req, res) => {
       return res.status(409).json({ message: "User not found in room" });
     }
 
-    userState[index2] = [user.name,state];
+    roomState.userState[index2] = [user.name,state];
 
     await roomState.save();
 
