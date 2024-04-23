@@ -278,7 +278,10 @@ export const updatePlayer = async (req, res) => {
 
     //update score
     const index = roomState.score.findIndex((index) => index[0] == user.name);
-    roomState.score[index][1] = score;
+    if(index == -1){
+      return res.status(409).json({ message: "User not found in room" });
+    }
+    roomState.score[index] = score;
     
     await roomState.save();
 
