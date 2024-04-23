@@ -1,0 +1,309 @@
+type,language,sentence,length
+sentence,en,I'm going to the concert.,5
+sentence,en,He was a horrible dancer.,5
+sentence,en,"When we started out in 2008, we wrote down a list of people that we wanted to hire, then went out and hired them.",24
+sentence,en,My sister likes to eat cheese on her peanut butter sandwich and pickles on her ice cream.,17
+sentence,en,This is the biggest party I've ever been to.,9
+sentence,en,I want to have my name taken off the list.,10
+sentence,en,The baby was so cute but she was crying so loud I had to plug my ears.,17
+sentence,en,"Every time she left the apartment, she was scared she'd come home to find all her valuables stolen or irreparably burned in a horrible fire.",25
+sentence,en,You have a big house.,5
+sentence,en,I didn't like how they dyed my hair today at the salon.,12
+sentence,en,Paris is one of the biggest cities in the world.,10
+sentence,en,My shoes are blue with yellow stripes and green stars on the front.,13
+sentence,en,We never found a body.,5
+sentence,en,The rabbit leaped over the tiny fence.,7
+sentence,en,His boss might get angry with his tone.,8
+sentence,en,I want to meet his sister-in-law.,6
+sentence,en,I ordered a new laptop case yesterday.,7
+sentence,en,You look just like your brother.,6
+sentence,en,He wondered what else he could craft with those.,9
+sentence,en,I will never forget that day.,6
+sentence,en,"I twisted my ankle but couldn't afford to pay for taxis, so had to keep walking on it for weeks.",20
+sentence,en,I’m reconsidering my decision to get such an expensive car.,10
+sentence,en,My pen broke and leaked blue ink all over my new dress.,12
+sentence,en,You use this when someone is very afraid or very sick.,11
+sentence,en,The big green plant was starting to droop at the stem.,11
+sentence,en,She knew she should be grateful but still felt sad.,10
+sentence,en,She cleaned out her fridge and found a wrinkled orange in the back of it.,15
+sentence,en,He wished he had waited to move out until after he had found a job.,15
+sentence,en,"The Grand Canyon got snow for the first time in decades, and all the tourists were very excited.",18
+sentence,en,She put up window decals of pumpkins and they caught all the gnats in her room.,16
+sentence,en,She lived in constant fear of being abruptly fired.,9
+sentence,en,They dressed the baby as a pot of honey for Halloween.,11
+sentence,en,"She didn't like to support Amazon, but she was too lazy to go shopping anywhere else.",16
+sentence,en,"And now I get to sleep all day, Rose huffed dejectedly.",11
+sentence,en,She had a hard time finding laundry detergent when she was traveling.,12
+sentence,en,Sam felt sick after eating five huge candy bars.,9
+sentence,en,My favorite thing about dancing is listening to the music.,10
+sentence,en,"She wanted her grandmother's old bike, but the tires were worn out and she couldn't find a shop that could replace them.",22
+sentence,en,"If you ask for my number, I might give it to you.",12
+sentence,en,"She liked to support independent coffee shops, but often couldn't afford the price-tags of their custom brews.",17
+sentence,en,I need to stop spending money.,6
+sentence,en,I am a little mad right now.,7
+sentence,en,I do not like meat.,5
+sentence,en,Being fashionable is fun.,4
+sentence,en,We've got a major job ahead of us.,8
+sentence,en,We live near an old library.,6
+sentence,en,The security is the safest around.,6
+sentence,en,She wished she could speak Italian.,6
+sentence,en,The computer is dying on me.,6
+sentence,en,His eyes were glazed over.,5
+sentence,en,Sarey lives alone in a remote cabin.,7
+sentence,en,We have a long day tomorrow.,6
+sentence,en,Property is government.,3
+sentence,en,She became homeless after she was evicted.,7
+sentence,en,There was a big earthquake last night.,7
+sentence,en,They make wonderful walking buddies.,5
+sentence,en,I want to see you.,5
+sentence,en,Trees are small when they are first planted.,8
+sentence,en,I'm always late and I don't care.,7
+sentence,en,I want to have a part-time job.,7
+sentence,en,I never knew what hardship looked like until it started raining bowling balls.,13
+sentence,en,"As you consider all the possible ways to improve yourself and the world, you notice John Travolta seems fairly unhappy.",20
+sentence,en,It had been sixteen days since the zombies first attacked.,10
+sentence,en,Harrold felt confident that nobody would ever suspect his spy pigeon.,11
+sentence,en,"Thigh-high in the water, the fisherman’s hope for dinner soon turned to despair.",13
+sentence,en,Nobody has encountered an explosive daisy and lived to tell the tale.,12
+sentence,en,It's always a good idea to seek shelter from the evil gaze of the sun.,15
+sentence,en,I was offended by the suggestion that my baby brother was a jewel thief.,14
+sentence,en,Hayley Wickenheiser is an incredible human being.,7
+sentence,en,I fell in the mud as I was walking home from school today.,13
+sentence,en,The statue was of a golden businessman with the face of a cat.,13
+sentence,en,Do not sign a delivery receipt unless it accurately lists the goods received.,13
+sentence,en,"She reads like a child playing dress-up, an intern clothing herself out of her mother’s old work clothes.",18
+sentence,en,The painting looked like something out of the 1700s.,9
+sentence,en,"She bought the book because she liked the movie, not realizing the two were very different.",16
+sentence,en,It would be crushing for him to lose both of his parents in a single year.,16
+sentence,en,"She liked the coffee shop, but the prices were too high for her to justify for herself.",17
+sentence,en,She lived in constant fear of being abruptly fired.,9
+sentence,en,The earthquake was the scariest one that we had ever experienced.,11
+sentence,en,She was in Australia when the COVID-lockdown started.,8
+sentence,en,I haven't spoken t o my childhood best friend in over a decade.,13
+sentence,en,"Running along the golf course, she tripped and twisted her ankle.",11
+sentence,en,I think I could convince Tom to put you on the list.,12
+sentence,en,"She waited all day for her boss to call, but heard nothing.",12
+sentence,en,She was a firm believer in the power of McDonald's chicken nuggets to fix all problems.,16
+sentence,en,He was sick of applying for jobs on job boards.,10
+sentence,en,It’s not very likely that she went out for lunch.,10
+sentence,en,She wished she had bought Bitcoin back in 2010.,9
+sentence,en,The car was a fun spot to sit on.,9
+sentence,en,My efforts resulted in nothing.,5
+sentence,en,He’s the best in the business.,6
+sentence,en,It doesn’t rain here in the summer.,7
+sentence,en,This company's profit margin is very big.,7
+sentence,en,There were seven balloons at the store.,7
+sentence,en,I felt sort of sick.,5
+sentence,en,He got a tattoo with another woman.,7
+sentence,en,It’s right around the corner.,5
+sentence,en,Tom also broke his big toe on his right foot.,10
+sentence,en,I will open the door.,5
+sentence,en,This room is just about big enough.,7
+sentence,en,You guys like meat.,4
+sentence,en,She dissed my mother.,4
+sentence,en,Alex works for 4 hours every day.,7
+sentence,en,Tom is looking for a bigger house to live in.,10
+sentence,en,New experiences are the best.,5
+sentence,en,He's trying to protect everyone.,5
+sentence,en,Tom is a big shot.,5
+sentence,en,We live near an old library.,6
+sentence,en,I would have forgotten her birthday if Facebook didn't remind me.,11
+sentence,en,The pool was green and covered in gross-looking algae.,9
+sentence,en,This is the biggest fish that I have ever caught.,10
+sentence,en,"Criticizing racists isn't a repression of free speech, it is free speech.",12
+sentence,en,Donald made a list of things he wanted to do before he died.,13
+sentence,en,"She liked the color green, so she decided to make her entire bedroom green, and even installed green carpet.",19
+sentence,en,Create beautiful designs with a powerful tool.,7
+sentence,en,His grandmother loved his paintings so much that she tried to sell them to her friends.,16
+sentence,en,The airplane went through such bad turbulence that everyone thought they were going to die.,15
+sentence,en,Sometimes you just gotta roll with the punches.,8
+sentence,en,"You connect with nature, and whether you plant flowers or vegetables, you get great satisfaction once the fruits of your labor start appearing.",23
+sentence,en,Doing more exercise will help you get rid of a few kilos.,12
+sentence,en,She liked the feeling of the keyboard under her fingers.,10
+sentence,en,She had never had prosecco but she wanted to try it.,11
+sentence,en,You must know the sound of each letter in the English alphabet.,12
+sentence,en,"She told them what she wanted to do with her life, and they laughed.",14
+sentence,en,A wand gets its magic from the intention of its wielder.,11
+sentence,en,Our house is a historic building and protected monument.,9
+sentence,en,"She wanted her grandmother's old bike, but the tires were worn out and she couldn't find a shop that could replace them.",22
+sentence,en,It was in the 1920s that a big earthquake destroyed Tokyo.,11
+sentence,en,The train was forty-seven minutes late.,6
+sentence,en,Lincoln shot them.,3
+sentence,en,I like asparagus and brussel sprouts.,6
+sentence,en,A huge wave turned over his canoe.,7
+sentence,en,Eurasia has a very rich history.,6
+sentence,en,She washed the tomatoes.,4
+sentence,en,This is the biggest party I've ever been to.,9
+sentence,en,My dad makes yogurt a lot.,6
+sentence,en,This is too big for one person to carry.,9
+sentence,en,We go to a gallery every Sunday.,7
+sentence,en,We live in Texas.,4
+sentence,en,My mom got a new job.,6
+sentence,en,This shouldn't be a big deal.,6
+sentence,en,Golf is both a physical and mental game.,8
+sentence,en,He never calls this late at night.,7
+sentence,en,The papers were mixed together in a big box.,9
+sentence,en,The siblings could help each other.,6
+sentence,en,I'm going to crash at your place.,7
+sentence,en,There are clothes everywhere.,4
+sentence,en,I had so much hope in the beginning.,8
+sentence,en,I have a feeling the boss won’t be happy about this.,11
+sentence,en,"Come over and see me after your swim, he said.",10
+sentence,en,Healthy beautiful smiles are what we like to see.,9
+sentence,en,"He broke his promise, which was a big mistake.",9
+sentence,en,He couldn't afford to eat anything but ramen and rice.,10
+sentence,en,"I shouldn't have used the word ""password"" as my password.",10
+sentence,en,"I don't appreciate your tone, the teacher said.",8
+sentence,en,Last night there was a big fire in the neighbourhood.,10
+sentence,en,I didn't know what to wear to my best friend's funeral.,11
+sentence,en,He threatened to tell everyone about the time she threw up in his shoes when she was drunk.,18
+sentence,en,I’ve asked you a thousand times not to leave your dirty socks on the floor.,15
+sentence,en,The tall girl tied her tennis shoes and went outside.,10
+sentence,en,The thing she missed most after she moved was the restaurant's from the city.,14
+sentence,en,"She painted her face purple for Halloween, so she could go as a grape.",14
+sentence,en,She wished her mom lived in the city so she could buy her dinner.,14
+sentence,en,They tore up the football field so they could develop the area for a new science wing.,17
+sentence,en,He pulled out my chair for me and called me 'sweet pea.'.,12
+sentence,en,She couldn't get a job because she didn't have a permanent address.,12
+sentence,en,"My pet turtle, Jim, got out of his cage and I could not find him anywhere.",16
+sentence,en,"Today is Sunday, which means tomorrow is Monday and yesterday was Saturday.",12
+sentence,en,She made him a cake for his party.,8
+sentence,en,I ask why she’s brought tortillas.,6
+sentence,en,He had pink and green hair.,6
+sentence,en,The enemy destroyed the city.,5
+sentence,en,I am on a very tight budget.,7
+sentence,en,Being late is never okay.,5
+sentence,en,There's a gross fly on the ceiling.,7
+sentence,en,Being fashionable is a lot of work.,7
+sentence,en,There were rats all over the neighborhood.,7
+sentence,en,I have something to tell you.,6
+sentence,en,What we had was a total lie.,7
+sentence,en,He feels small next to him.,6
+sentence,en,I have a hairless cat.,5
+sentence,en,I may be a little bit drunk.,7
+sentence,en,He opens the door.,4
+sentence,en,Ken's uncle has a chicken farm.,6
+sentence,en,He can't take the joke.,5
+sentence,en,Nothing hurts like the truth.,5
+sentence,en,You're pulling my leg.,4
+sentence,en,He needed thirteen stitches.,4
+sentence,en,Our teacher often overlooked his name on the list.,9
+sentence,en,You need to understand how big this problem is.,9
+sentence,en,She thought Portuguese sangria was absolutely disgusting.,7
+sentence,en,She was so stupid he couldn't help but roll his eyes.,11
+sentence,en,My whole body was one big bruise after the rugby game.,11
+sentence,en,She liked confidence men and hated herself for it.,9
+sentence,en,The earthquake was the scariest one that we had ever experienced.,11
+sentence,en,Those hairless cats are completely loyal to their owners.,9
+sentence,en,My biggest problem is deciding what to do next.,9
+sentence,en,Tom just got that big promotion he's been waiting for.,10
+sentence,en,"Looking back, I know it was the right decision.",9
+sentence,en,She hated every flavor of ice cream except Double-Sprinkle Rainbow Unicorn Crunch.,12
+sentence,en,"On the safari she went on in South Africa, she saw lions, elephants, and meerkats.",15
+sentence,en,She didn't know how much more of this she could take before she snapped.,14
+sentence,en,"When I think about space too much, it feels like my brain is going to explode.",16
+sentence,en,She gave up on babysitting after she had to change the baby's first diaper.,14
+sentence,en,There used to be a big cherry tree behind my house.,11
+sentence,en,I had to check Facebook to figure out her last name.,11
+sentence,en,"She waited all day for her boss to call, but heard nothing.",12
+sentence,en,"The girl wore her hair in two braids, tied with two blue bows.",13
+sentence,en,He needed a new helmet because his got smashed when he was riding his bike.,15
+sentence,en,I’m having second thoughts about getting married so soon.,9
+sentence,en,These are the things that I want from a relationship.,10
+sentence,en,My mom drove me to school fifteen minutes late on Tuesday.,11
+sentence,en,They wrote the specials on the chalkboard in multi-colored chalks.,10
+sentence,en,It isn't a coincidence that billionaires love this plan.,9
+sentence,en,"I'll be back tomorrow, and we can decide together then.",10
+sentence,en,"She hated Christmas, all the more so because her parents loved it.",12
+sentence,en,Bill boasts of owning the biggest car in the neighborhood.,10
+sentence,en,We usually eat our biggest meal of the day at noon.,11
+sentence,en,She started drinking again because she felt so awkward at social gatherings.,12
+sentence,en,"She painted her face purple for Halloween, so she could go as a grape.",14
+sentence,en,"In the near future, we may have a big earthquake in Japan.",12
+sentence,en,He was very scared when he saw this big snake.,10
+sentence,en,"On her seventeenth birthday, she jumped from her house's third-floor balcony.",11
+sentence,en,"She liked the wallpaper in her room, but her mom insisted they remove it and put up paint instead.",19
+sentence,en,It was the most exciting match I’ve ever seen.,9
+sentence,en,Tom forgot his shopping list and only got half of what he wanted to.,14
+sentence,en,He couldn't afford to eat anything but ramen and rice.,10
+sentence,en,I wish I grew up in the South and learned about country music earlier.,14
+sentence,en,He bonded with his father over music.,7
+sentence,en,I don’t hate you.,4
+sentence,en,I want to invest in some stocks now.,8
+sentence,en,Corduroy and double-denim are back in.,6
+sentence,en,Actions speak louder than words.,5
+sentence,en,The ocean is my favorite view.,6
+sentence,en,"Yes, I live in this house over here.",8
+sentence,en,I can do what you said.,6
+sentence,en,She forgot to water the plant for two months.,9
+sentence,en,This is the biggest dog in the world.,8
+sentence,en,I go back to bedroom.,5
+sentence,en,Tom has always had a big crush on you.,9
+sentence,en,That is a huge deal for me.,7
+sentence,en,Oysters are disgusting.,3
+sentence,en,She is my elder sister.,5
+sentence,en,The dessert tasted very sweet.,5
+sentence,en,Every decision has an antecedent.,5
+sentence,en,He is worried about you.,5
+sentence,en,My sister killed it.,4
+sentence,en,The first baseman caught the fly ball.,7
+sentence,en,"In Japan, there is no lake bigger than Lake Biwa.",10
+sentence,en,She wanted to energize herself but didn't know how.,9
+sentence,en,Create beautiful designs with a powerful tool.,7
+sentence,en,American kitchens are much bigger than Japanese ones.,8
+sentence,en,The man looked at her strangely through the window.,9
+sentence,en,She miscalculated the amount of broth in her soup and inadvertently boiled it all off.,15
+sentence,en,"I think it's fine to have many credit cards, as long as you pay them off every month.",18
+sentence,en,Tom's father is not written on his birth certificate.,9
+sentence,en,Cows like to stand outside and eat grass all day.,10
+sentence,en,She decided that she had to work on writing better ledes for her newspaper articles.,15
+sentence,en,Me and my sister don’t see each other anymore.,9
+sentence,en,She knew as soon as she rejected the job that it was the wrong decision to make.,17
+sentence,en,Pam wants to play outside because it just stopped raining.,10
+sentence,en,"My pet turtle, Jim, got out of his cage and I could not find him anywhere.",16
+sentence,en,I had a bad feeling the morning after drinking too much.,11
+sentence,en,"The bike shop had special bike racks out front, which were shaped like bicycle wheels.",15
+sentence,en,"I planned to walk home, but my feet got so sore I had to find a bus stop instead.",19
+sentence,en,The guy I met online is probably a psychopath.,9
+sentence,en,"If I get fired from my job, I don't know what I am going to do.",16
+sentence,en,"The girl had very long, very pretty hair and round glasses.",11
+sentence,en,I will open the door.,5
+sentence,en,I speak English.,3
+sentence,en,Nothing hurts like the truth.,5
+sentence,en,I was called into the office first.,7
+sentence,en,The bleeding isn't Tom's biggest problem.,6
+sentence,en,She was afraid to go to the doctor.,8
+sentence,en,This is just too big for one person to carry.,10
+sentence,en,This tree is bigger than all the others.,8
+sentence,en,I’m the designated driver.,4
+sentence,en,The fossil belongs to a fish.,6
+sentence,en,He drives more carefully than you do.,7
+sentence,en,I can be greedy sometimes.,5
+sentence,en,Therapy seems helpful.,3
+sentence,en,You did right in me by telling the truth.,9
+sentence,en,We have a brown dog.,5
+sentence,en,We go to the gym club together.,7
+sentence,en,Kids are wearing masks.,4
+sentence,en,I don't care how long your socks are.,8
+sentence,en,You're not looking at the big picture here.,8
+sentence,en,I want a diagram of all Tom's relatives.,8
+sentence,en,I think you should stop charging so much money.,9
+sentence,en,"You say this after someone fails, and you hope they do better next time.",14
+sentence,en,"According to Haidt’s Social Intuitionist Model of moral judgement, morality is both social and intuitionist.",15
+sentence,en,It’s about as exciting as watching paint dry.,8
+sentence,en,I'm just trying to stop you from making a big mistake.,11
+sentence,en,This carpet is big enough to cover the whole floor.,10
+sentence,en,She was a firm believer in the power of McDonald's chicken nuggets to fix all problems.,16
+sentence,en,Blue candies are more tasty than orange candies.,8
+sentence,en,"Lenora only had eight fingers, after losing both of her pinkies to a freak accident with a hay baler.",19
+sentence,en,"Last weekend, she wanted to go to the wedding, but she wasn't sure it was safe.",16
+sentence,en,I'm sorry to inform you and the rest of Elegante that I will no longer be working effective immediately.,19
+sentence,en,"They sold shampoo and conditioner, but no plain soap.",9
+sentence,en,"In general, people in America tend to prefer bigger cars.",10
+sentence,en,"On the safari she went on in South Africa, she saw lions, elephants, and meerkats.",15
+sentence,en,She kept her stuffed animal from childhood on a shelf above her desk.,13
+sentence,en,"He didn't want to go to the party, but he had already said he would go.",16
+sentence,en,Her face turned red because she was embarrassed.,8
+sentence,en,She loved the overnight train from Prague to Krakow.,9
+sentence,en,Do not sign a delivery receipt unless it accurately lists the goods received.,13
+sentence,en,"Everyone says In-N-Out is the best fast-food restaurant in the country, but honestly, I was very underwhelmed.",17

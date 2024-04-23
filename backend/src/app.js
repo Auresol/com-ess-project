@@ -13,6 +13,7 @@ app.use(express.json());
 app.use(cors({
   origin: '*'  // Allow requests from this origin
 }));
+// not working wtf
 
 app.use("/auth", auth);
 app.use("/game", jwtVerifier, game);

@@ -1,0 +1,108 @@
+type,language,sentence,length,character
+code,rust,pub trait LayoutCalculator {,5.6,28
+code,rust,type TargetDataLayoutRef: Borrow<TargetDataLayout>;,10.2,51
+code,rust,"fn delayed_bug(&self, txt: impl Into<Cow<'static, str>>);",11.4,57
+code,rust,fn current_data_layout(&self) -> Self::TargetDataLayoutRef;,11.8,59
+code,rust,"fn scalar_pair<FieldIdx: Idx, VariantIdx: Idx>(",9.4,47
+code,rust,"&self,",1.2,6
+code,rust,"a: Scalar,",2,10
+code,rust,"b: Scalar,",2,10
+code,rust,") -> LayoutS<FieldIdx, VariantIdx> {",7.2,36
+code,rust,let dl = self.current_data_layout();,7.2,36
+code,rust,let dl = dl.borrow();,4.2,21
+code,rust,let b_align = b.align(dl);,5.2,26
+code,rust,let align = a.align(dl).max(b_align).max(dl.aggregate_align);,12.2,61
+code,rust,let b_offset = a.size(dl).align_to(b_align.abi);,9.6,48
+code,rust,let size = (b_offset + b.size(dl)).align_to(align.abi);,11,55
+code,rust,if fields.len() > 1 && head_space != 0 && tail_space > 0 {,11.6,58
+code,rust,"let alt_layout = univariant(self, dl, fields, repr, kind, NicheBias::End)",14.6,73
+code,rust,".expect(""alt layout should always work"");",8.2,41
+code,rust,let alt_niche = alt_layout,5.2,26
+code,rust,.largest_niche,2.8,14
+code,rust,".expect(""alt layout should have a niche like the regular one"");",12.6,63
+code,rust,let alt_head_space = alt_niche.offset.bytes();,9.2,46
+code,rust,let alt_niche_len = alt_niche.value.size(dl).bytes();,10.6,53
+code,rust,let alt_tail_space =,4,20
+code,rust,alt_layout.size.bytes() - alt_head_space - alt_niche_len;,11.4,57
+code,rust,impl PpAnn for &dyn rustc_hir::intravisit::Map<'_> {,10.4,52
+code,rust,"fn nested(&self, state: &mut State<'_>, nested: Nested) {",11.4,57
+code,rust,match nested {,2.8,14
+code,rust,"Nested::Item(id) => state.print_item(self.item(id)),",10.4,52
+code,rust,"Nested::TraitItem(id) => state.print_trait_item(self.trait_item(id)),",13.8,69
+code,rust,"Nested::ImplItem(id) => state.print_impl_item(self.impl_item(id)),",13.2,66
+code,rust,"Nested::ForeignItem(id) => state.print_foreign_item(self.foreign_item(id)),",15,75
+code,rust,"Nested::Body(id) => state.print_expr(self.body(id).value),",11.6,58
+code,rust,"Nested::BodyParamPat(id, i) => state.print_pat(self.body(id).params[i].pat),",15.2,76
+code,rust,"fn track_diagnostic<R>(diagnostic: DiagInner, f: &mut dyn FnMut(DiagInner) -> R) -> R {",17.4,87
+code,rust,"fn def_id_debug(def_id: rustc_hir::def_id::DefId, f: &mut fmt::Formatter<'_>) -> fmt::Result {",18.8,94
+code,rust,"pub fn dep_kind_debug(kind: DepKind, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {",18.2,91
+code,rust,pub fn setup_callbacks() {,5.2,26
+code,rust,rustc_span::SPAN_TRACK.swap(&(track_span_parent as fn(_)));,11.8,59
+code,rust,"rustc_hir::def_id::DEF_ID_DEBUG.swap(&(def_id_debug as fn(_, &mut fmt::Formatter<'_>) -> _));",18.6,93
+code,rust,rustc_query_system::dep_graph::dep_node::DEP_KIND_DEBUG,11,55
+code,rust,".swap(&(dep_kind_debug as fn(_, &mut fmt::Formatter<'_>) -> _));",12.8,64
+code,rust,rustc_query_system::dep_graph::dep_node::DEP_NODE_DEBUG,11,55
+code,rust,".swap(&(dep_node_debug as fn(_, &mut fmt::Formatter<'_>) -> _));",12.8,64
+code,rust,TRACK_DIAGNOSTIC.swap(&(track_diagnostic as _));,9.6,48
+code,java,final class DeadHostState implements Comparable<DeadHostState> {,12.8,64
+code,java,private static final long MIN_CONNECTION_TIMEOUT_NANOS = TimeUnit.MINUTES.toNanos(1);,17,85
+code,java,static final long MAX_CONNECTION_TIMEOUT_NANOS = TimeUnit.MINUTES.toNanos(30);,15.6,78
+code,java,static final Supplier<Long> DEFAULT_TIME_SUPPLIER = System::nanoTime;,13.8,69
+code,java,Iterator<Node> itr = nodes.iterator();,7.6,38
+code,java,while (itr.hasNext()) {,4.6,23
+code,java,"Map<String, List<String>> allAttributes = itr.next().getAttributes();",13.8,69
+code,java,if (allAttributes == null) continue;,7.2,36
+code,java,List<String> values = allAttributes.get(key);,9,45
+code,java,if (values == null || false == values.contains(value)) {,11.2,56
+code,java,itr.remove();,2.6,13
+code,java,import java.util.ArrayList;,5.4,27
+code,java,import java.util.Collections;,5.8,29
+code,java,import java.util.HashMap;,5,25
+code,java,import java.util.List;,4.4,22
+code,java,import java.util.Map;,4.2,21
+code,java,import java.util.Objects;,5,25
+code,java,private RequestOptions(Builder builder) {,8.2,41
+code,java,this.headers = Collections.unmodifiableList(new ArrayList<>(builder.headers));,15.6,78
+code,java,this.parameters = Collections.unmodifiableMap(builder.parameters);,13.2,66
+code,java,this.httpAsyncResponseConsumerFactory = builder.httpAsyncResponseConsumerFactory;,16.2,81
+code,java,this.warningsHandler = builder.warningsHandler;,9.4,47
+code,java,this.requestConfig = builder.requestConfig;,8.6,43
+code,java,if (httpAsyncResponseConsumerFactory != HttpAsyncResponseConsumerFactory.DEFAULT) {,16.6,83
+code,java,"if (comma) b.append("", "");",5.2,26
+code,java,"b.append(""consumerFactory="").append(httpAsyncResponseConsumerFactory);",14,70
+code,java,RequestOptions other = (RequestOptions) obj;,8.8,44
+code,java,return headers.equals(other.headers),7.2,36
+code,java,&& httpAsyncResponseConsumerFactory.equals(other.httpAsyncResponseConsumerFactory),16.4,82
+code,java,"&& Objects.equals(warningsHandler, other.warningsHandler);",11.6,58
+code,python,from tensorflow.python.checkpoint import checkpoint as trackable_utils,14,70
+code,python,from tensorflow.python.checkpoint import checkpoint_management,12.4,62
+code,python,from tensorflow.python.data.experimental.ops import global_shuffle_op,13.8,69
+code,python,from tensorflow.python.data.experimental.ops import random_access,13,65
+code,python,from tensorflow.python.data.kernel_tests import checkpoint_test_base,13.6,68
+code,python,self.assertEqual(,3.4,17
+code,python,[ts.as_list() for ts in nest.flatten(,7.4,37
+code,python,"dataset_ops.get_legacy_output_shapes(dataset))],",9.6,48
+code,python,[[dim0] + list(c.shape[1:]) for c in components]),9.8,49
+code,python,@combinations.generate(test_base.default_test_combinations()),12.2,61
+code,python,def testInvalidBatchSize(self):,6.2,31
+code,python,with self.assertRaises(errors.InvalidArgumentError):,10.4,52
+code,python,dataset = (dataset_ops.Dataset.range(10).batch(0)),10,50
+code,python,self.evaluate(dataset._variant_tensor),7.6,38
+code,python,@combinations.generate(test_base.default_test_combinations()),12.2,61
+code,python,def testNestedFlatMapDataset(self):,7,35
+code,python,"components = np.array(repeats, dtype=np.int64)",9.2,46
+code,python,dataset = dataset_ops.Dataset.from_tensor_slices(components).flat_map(,14,70
+code,python,lambda x: dataset_ops.Dataset.from_tensor_slices(x).flat_map(,12.2,61
+code,python,lambda y: dataset_ops.Dataset.from_tensors(y).repeat(y),11,55
+code,python,@combinations.generate(test_base.default_test_combinations()),12.2,61
+code,python,def testInfiniteRepeat(self):,5.8,29
+code,python,"components = (np.array(1), np.array([1, 2, 3]), np.array(37.0))",12.6,63
+code,python,dataset = dataset_ops.Dataset.from_tensors(components).repeat(-1),13,65
+code,python,self.assertEqual(,3.4,17
+code,python,"[c.shape for c in components],",6,30
+code,python,[shape for shape in dataset_ops.get_legacy_output_shapes(dataset)]),13.4,67
+code,python,get_next = self.getNext(dataset),6.4,32
+code,python,for _ in range(17):,3.8,19
+code,python,results = self.evaluate(get_next()),7,35
+code,python,"for component, result_component in zip(components, results):",12,60
+code,python,"self.assertAllEqual(component, result_component)",9.6,48
