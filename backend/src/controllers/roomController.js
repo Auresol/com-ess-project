@@ -293,10 +293,10 @@ export const updatePlayer = async (req, res) => {
 
     await roomState.save();
 
-    res.status(200).json("Update success");
+    res.status(200).json({message : "Update success"});
 
   } catch (error) {
-    res.status(404).json({ message: error.message });
+    res.status(405).json({ message: error.message });
 
   }
 }
@@ -314,6 +314,7 @@ export const getRoomState = async (req, res) => {
     }
 
     let is_end = true;
+    cons
     for(const userstate of room.userState){
       if(userstate[1] !== "ENDED"){
         is_end = false;

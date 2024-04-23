@@ -16,7 +16,7 @@ router.delete("/room/:id", roomController.deleteRoom);
 router.post("/room/:id/leave", roomController.leaveRoom);
 
 router.post("/room/:id/start", roomController.startRoom);
-router.post("/room/:id/update", roomController.updatePlayer);
+router.put("/room/:id/update", roomController.updatePlayer);
 router.get("/room/:id/state", roomController.getRoomState);
 
 
