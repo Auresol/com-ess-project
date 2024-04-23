@@ -314,7 +314,6 @@ export const getRoomState = async (req, res) => {
     }
 
     let is_end = true;
-    cons
     for(const userstate of room.userState){
       if(userstate[1] !== "ENDED"){
         is_end = false;
