@@ -9,6 +9,10 @@ const roomStateSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  userState: {
+    type: [Object],
+    required: true
+  },
   event: {
     type: [Object],
     required: true

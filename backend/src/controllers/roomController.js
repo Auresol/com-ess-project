@@ -220,6 +220,7 @@ export const startRoom = async (req, res) => {
     newRoomState = new RoomState({
       room : room._id,
       state : "PLAYING",
+      userState : room.users.map((user) => [user.name, "PLAYING"]),
       event : [],
       score : room.users.map((user) => [user.name, 0])
     });
@@ -283,6 +284,13 @@ export const updatePlayer = async (req, res) => {
     }
     roomState.score[index] = [user.name,score];
     
+    const index2 = roomState.userState.findIndex((index) => index[0] === user.name);
+    if(index2 == -1){
+      return res.status(409).json({ message: "User not found in room" });
+    }
+
+    userState[index2] = [user.name,state];
+
     await roomState.save();
 
     res.status(200).json("Update success");
@@ -306,8 +314,8 @@ export const getRoomState = async (req, res) => {
     }
 
     let is_end = true;
-    for(const user of room.users){
-      if(user.state != "ENDED"){
+    for(const userstate of room.userState){
+      if(userstate[1] !== "ENDED"){
         is_end = false;
         break;
       }
