@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json());
 
 app.use(cors({
-  origin: 'http://localhost:4000'  // Allow requests from this origin
+  origin: '*'  // Allow requests from this origin
 }));
 
 app.use("/auth", auth);
