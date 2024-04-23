@@ -3,36 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home Page</title>
+  <title>HOME PAGE</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Welcome to Our Website</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <div class="container">
-      <div class="info-section">
-        <h2>A Little About Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum tempus egestas. Donec euismod bibendum laoreet. Proin pulvinar libero quis diam.</p>
-        <p>Mauris egestas lorem ac laoreet rutrum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui.</p>
-      </div>
-      <div class="image-section">
-        <img src="image.jpg" alt="Our company image">
+  <div class="head">
+    <h1 >Party!</h1>
+  </div>
+  <div class="container">
+    <div  class="left-side">
+      <div id="box1">
+        <h1>Create Party</h1>
+        <image id="img1"
+          src="image/friend.png"
+          width="350px"
+          height="350px"
+        ></image>
+        <button class="createbut" onclick="window.location.href='../mode/index.html';">Let's play!</button>
       </div>
     </div>
-  </main>
+    <div class="right-side">
+      <div id="box2">
+        <h1> Join Party</h1>
+        <image id="img2"
+          src="image/magnifier.png"
+          width="350px"
+          height="350px"
+        ></image>
+        <form>
+          <input id="roomcode" type="text" autocomplete="off" class="roomcode" placeholder="Enter Room code:"><br>
+          <!-- <input type="submit" value="Join" class="submit"> -->
+        </form>
+      </div>
+    </div>
+  </div>
 
+
+  <script type="module" src="./scripts/main.js"></script>
 </body>
 </html>
-

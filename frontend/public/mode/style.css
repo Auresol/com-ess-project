@@ -1,0 +1,77 @@
+body {
+    font-family: sans-serif;
+    color:rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    background-image: url(image/universe_cartoon2.avif);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.head{
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(5, 3, 22);
+}
+.mode{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;  /* เอาไว้ทำให้ห่างกัน */
+}
+.box{
+    margin-top: 30px;
+    width:18vw;
+    height: 85vh;
+    border-radius: 15px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#box1{
+    background-color: rgb(13, 24, 76);
+}
+#box2{
+    background-color: rgb(19, 40, 136);
+}
+#box3{
+    background-color: rgb(14, 42, 168);
+}
+#box4{
+    background-color: rgb(21, 53, 198);
+}
+#box5{
+    background-color: rgb(13, 52, 223);
+}
+.modename{
+    font-size: 3em;
+    font-weight: 1000;
+}
+
+@keyframes yourAnimation{
+    0% {
+    }
+    50% {
+        transform:  translate(8px,0px);
+    }
+    100% {
+    }
+}
+
+.box{
+    animation: yourAnimation 5s linear 0s infinite normal none;
+}
+
+.button{
+    width:7vw;
+    height:5vh;
+    border-radius: 10px;
+    font-size:1.2em;
+}
+.modedes{
+    font-size: 1.4em;
+}
+.modepic{
+    border-radius: 15px;
+}
