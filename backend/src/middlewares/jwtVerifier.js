@@ -10,8 +10,6 @@ const jwtVerifier = (req, res, next) => {
   token = token.split(' ')[1].replace(/\\/g, "");
   const decode = JSON.parse(token);
 
-  console.log(decode)
-
   if(decode.token != process.env.JWT_SECRET_KEY){
     return res.status(401).json({ error: 'Invalid token' });
   }

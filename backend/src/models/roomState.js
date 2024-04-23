@@ -5,6 +5,10 @@ const roomStateSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Room'
   },
+  state: {
+    type: String,
+    required: true
+  },
   event: {
     type: [Object],
     required: true

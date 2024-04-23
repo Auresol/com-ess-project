@@ -273,15 +273,15 @@ export const updatePlayer = async (req, res) => {
       while(roomState.event[i][1] < timepass && i < roomState.event.length){
         i++;
       }
-      roomState.event.insert(i, [user.name, timepass, score]);
+      roomState.event.push([user.name, timepass, score]);
     }
 
     //update score
-    const index = roomState.score.findIndex((index) => index[0] == user.name);
+    const index = roomState.score.findIndex((index) => index[0] === user.name);
     if(index == -1){
       return res.status(409).json({ message: "User not found in room" });
     }
-    roomState.score[index] = score;
+    roomState.score[index] = [user.name,score];
     
     await roomState.save();
 
