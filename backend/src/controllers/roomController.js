@@ -221,7 +221,7 @@ export const startRoom = async (req, res) => {
       room : room._id,
       state : "PLAYING",
       event : [],
-      score : room.users.map((user) => (user.name, 0))
+      score : room.users.map((user) => [user.name, 0])
     });
 
     await newRoomState.save();
@@ -229,6 +229,8 @@ export const startRoom = async (req, res) => {
     res.status(200).json(room);
 
   } catch (error) {
+
+    console.log("error : ", error);
 
     room.state = "WAITING";
     room.users.forEach((user) => user.state = "WAITING");
@@ -320,6 +322,7 @@ export const getRoomState = async (req, res) => {
     }
 
     roomState.state = room.state;
+    roomState.score = roomState.score.sort((a, b) => b[1] - a[1]);
     roomState.save();
 
     res.status(200).json(roomState);

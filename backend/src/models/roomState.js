@@ -6,11 +6,11 @@ const roomStateSchema = new mongoose.Schema({
     ref: 'Room'
   },
   event: {
-    type: [(String, Number, Number)],
+    type: [Object],
     required: true
   },
   score: {
-    type: [(String, Number)],
+    type: [Object],
     required: true
   }
 });

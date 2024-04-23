@@ -4,10 +4,13 @@ import "dotenv/config";
 export const getUser = async (req, res) => {
   
   const user = req.user;
+  console.log(user)
 
   try {
-    const user = await User.findById(req.user._id);
-    res.status(200).json(user);
+  console.log(user._id)
+    const userOut = await User.findById(user._id);
+    console.log(userOut)
+    res.status(200).json(userOut);
 
   } catch (error) {
     res.status(500).json({ message: "Something went wrong : " + error });
