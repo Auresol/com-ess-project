@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', async function() {
             if(increase_score > 0){
                 score += increase_score;
     
-                document.getElementById("score0").textContent = "Score : " + score;
+                //document.getElementById("score0").textContent = "Score : " + score;
                 answerBox.value = "";
 
                 handlePutUser(MAX_TIME - timeleft, score, "PLAYING");
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', async function() {
 function setAttribute(response){
 
     const scores = response.score;
-    //document.getElementById("player0").textContent = scores[0][0] + " : " + scores[0][1];
+    document.getElementById("player0").textContent = scores[0][0] + " : " + scores[0][1];
     for(let i = 1;i <= 8;i++){
         
         if(i < scores.length){
