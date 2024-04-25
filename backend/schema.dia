@@ -97,6 +97,7 @@
       </dia:composite>
     </dia:attribute>
   </dia:diagramdata>
+  <dia:layer name="Background" visible="true" connectable="true"/>
   <dia:layer name="Background" visible="true" connectable="false"/>
   <dia:layer name="Background" visible="true" connectable="true" active="true">
     <dia:object type="Database - Table" version="0" id="O0">
@@ -887,22 +888,22 @@
     </dia:object>
     <dia:object type="Database - Table" version="0" id="O4">
       <dia:attribute name="obj_pos">
-        <dia:point val="53.875,12.7"/>
+        <dia:point val="53.975,10.35"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="53.875,12.7;62.04,19.1"/>
+        <dia:rectangle val="53.975,10.35;62.14,17.95"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="elem_corner">
-        <dia:point val="53.875,12.7"/>
+        <dia:point val="53.975,10.35"/>
       </dia:attribute>
       <dia:attribute name="elem_width">
         <dia:real val="8.1650000000000009"/>
       </dia:attribute>
       <dia:attribute name="elem_height">
-        <dia:real val="6.4000000000000004"/>
+        <dia:real val="7.5999999999999996"/>
       </dia:attribute>
       <dia:attribute name="name">
         <dia:string>#RoomState#</dia:string>
@@ -935,6 +936,29 @@
           </dia:attribute>
           <dia:attribute name="primary_key">
             <dia:boolean val="true"/>
+          </dia:attribute>
+          <dia:attribute name="nullable">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="unique">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="default_value">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+        </dia:composite>
+        <dia:composite type="table_attribute">
+          <dia:attribute name="name">
+            <dia:string>#state#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#String#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="primary_key">
+            <dia:boolean val="false"/>
           </dia:attribute>
           <dia:attribute name="nullable">
             <dia:boolean val="false"/>
@@ -1260,16 +1284,16 @@
         <dia:point val="45.52,19.6"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="45.475,15.265;53.9756,19.645"/>
+        <dia:rectangle val="45.475,13.2994;54.0756,19.645"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="orth_points">
         <dia:point val="45.52,19.6"/>
-        <dia:point val="49.6975,19.6"/>
-        <dia:point val="49.6975,16"/>
-        <dia:point val="53.875,16"/>
+        <dia:point val="49.7475,19.6"/>
+        <dia:point val="49.7475,13.65"/>
+        <dia:point val="53.975,13.65"/>
       </dia:attribute>
       <dia:attribute name="orth_orient">
         <dia:enum val="0"/>
@@ -1305,10 +1329,10 @@
         <dia:real val="0.5"/>
       </dia:attribute>
       <dia:attribute name="start_point_desc">
-        <dia:string>#1#</dia:string>
+        <dia:string>##</dia:string>
       </dia:attribute>
       <dia:attribute name="end_point_desc">
-        <dia:string>#n#</dia:string>
+        <dia:string>##</dia:string>
       </dia:attribute>
       <dia:attribute name="normal_font">
         <dia:font family="monospace" style="0" name="Courier"/>
@@ -1326,7 +1350,7 @@
         <dia:point val="27.1025,14.9"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="27.0525,14.16;34.0618,22.3618"/>
+        <dia:rectangle val="27.0525,14.85;34.0618,22.4325"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -1355,14 +1379,14 @@
         <dia:real val="0.10000000000000001"/>
       </dia:attribute>
       <dia:attribute name="line_style">
-        <dia:enum val="4"/>
+        <dia:enum val="0"/>
         <dia:real val="1"/>
       </dia:attribute>
       <dia:attribute name="corner_radius">
         <dia:real val="0"/>
       </dia:attribute>
       <dia:attribute name="end_arrow">
-        <dia:enum val="23"/>
+        <dia:enum val="11"/>
       </dia:attribute>
       <dia:attribute name="end_arrow_length">
         <dia:real val="0.5"/>
@@ -1371,10 +1395,10 @@
         <dia:real val="0.5"/>
       </dia:attribute>
       <dia:attribute name="start_point_desc">
-        <dia:string>#1#</dia:string>
+        <dia:string>##</dia:string>
       </dia:attribute>
       <dia:attribute name="end_point_desc">
-        <dia:string>#1#</dia:string>
+        <dia:string>##</dia:string>
       </dia:attribute>
       <dia:attribute name="normal_font">
         <dia:font family="monospace" style="0" name="Courier"/>
@@ -1392,7 +1416,7 @@
         <dia:point val="26.945,23.2"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="26.9,22.495;34.0506,23.6143"/>
+        <dia:rectangle val="26.9,22.7857;34.0506,23.6143"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -1437,10 +1461,10 @@
         <dia:real val="0.5"/>
       </dia:attribute>
       <dia:attribute name="start_point_desc">
-        <dia:string>#1#</dia:string>
+        <dia:string>##</dia:string>
       </dia:attribute>
       <dia:attribute name="end_point_desc">
-        <dia:string>#n#</dia:string>
+        <dia:string>##</dia:string>
       </dia:attribute>
       <dia:attribute name="normal_font">
         <dia:font family="JetBrains Mono" style="0" name="Courier"/>
@@ -1458,7 +1482,7 @@
         <dia:point val="53.95,20.8"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="45.4194,20.065;53.995,21.2143"/>
+        <dia:rectangle val="45.4194,20.4494;53.995,21.1506"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -1487,14 +1511,14 @@
         <dia:real val="0.089999999999999997"/>
       </dia:attribute>
       <dia:attribute name="line_style">
-        <dia:enum val="0"/>
+        <dia:enum val="4"/>
         <dia:real val="1"/>
       </dia:attribute>
       <dia:attribute name="corner_radius">
         <dia:real val="0"/>
       </dia:attribute>
       <dia:attribute name="end_arrow">
-        <dia:enum val="11"/>
+        <dia:enum val="23"/>
       </dia:attribute>
       <dia:attribute name="end_arrow_length">
         <dia:real val="0.5"/>
@@ -1503,10 +1527,10 @@
         <dia:real val="0.5"/>
       </dia:attribute>
       <dia:attribute name="start_point_desc">
-        <dia:string>#1#</dia:string>
+        <dia:string>##</dia:string>
       </dia:attribute>
       <dia:attribute name="end_point_desc">
-        <dia:string>#n#</dia:string>
+        <dia:string>##</dia:string>
       </dia:attribute>
       <dia:attribute name="normal_font">
         <dia:font family="monospace" style="0" name="Courier"/>
@@ -1524,7 +1548,7 @@
         <dia:point val="18.95,14.9"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="16.2319,14.155;18.995,15.2506"/>
+        <dia:rectangle val="16.2319,14.5494;18.995,15.2506"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -1569,10 +1593,10 @@
         <dia:real val="0.5"/>
       </dia:attribute>
       <dia:attribute name="start_point_desc">
-        <dia:string>#1#</dia:string>
+        <dia:string>##</dia:string>
       </dia:attribute>
       <dia:attribute name="end_point_desc">
-        <dia:string>#1#</dia:string>
+        <dia:string>##</dia:string>
       </dia:attribute>
       <dia:attribute name="normal_font">
         <dia:font family="monospace" style="0" name="Courier"/>
