@@ -5,7 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(image/anime-style-galaxy-background.jpg);
+    background-image: url(./image/anime-style-galaxy-background.jpg);
     background-attachment: fixed;
     background-position: center;
   }

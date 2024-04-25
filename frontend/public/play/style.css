@@ -4,7 +4,7 @@ body{
   color:rgb(255, 255, 255);
   margin: 0;
   padding: 0;
-  background-image: url(image/anime-style-galaxy-background.jpg);
+  background-image: url(/images/anime-style-galaxy-background.jpg);
   background-attachment: fixed;
   background-position: center;
 }
